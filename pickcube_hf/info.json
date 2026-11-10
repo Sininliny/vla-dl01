@@ -1,0 +1,82 @@
+{
+  "codebase_version": "v2.0",
+  "robot_type": "manipulator",
+  "total_episodes": 5,
+  "total_frames": 250,
+  "total_tasks": 1,
+  "fps": 30,
+  "splits": {
+    "train": "0:5"
+  },
+  "data_path": "data.hdf5",
+  "video_path": null,
+  "features": {
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ],
+      "names": [
+        "joint_1",
+        "joint_2",
+        "joint_3",
+        "joint_4",
+        "joint_5",
+        "joint_6"
+      ]
+    },
+    "observation.image": {
+      "dtype": "uint8",
+      "shape": [
+        3,
+        256,
+        256
+      ],
+      "names": [
+        "C",
+        "H",
+        "W"
+      ]
+    },
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ],
+      "names": [
+        "action_1",
+        "action_2",
+        "action_3",
+        "action_4",
+        "action_5",
+        "action_6"
+      ]
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [],
+      "names": null
+    },
+    "timestamp": {
+      "dtype": "float64",
+      "shape": [],
+      "names": null
+    },
+    "next.done": {
+      "dtype": "bool",
+      "shape": [],
+      "names": null
+    },
+    "language_instruction": {
+      "dtype": "string",
+      "shape": [],
+      "names": null
+    }
+  },
+  "task_description": "Pick up the cube and place it at the target location"
+}

@@ -1,0 +1,46 @@
+{
+  "features": {
+    "episode_index": {
+      "dtype": "int64"
+    },
+    "frame_index": {
+      "dtype": "int64"
+    },
+    "timestamp": {
+      "dtype": "float64"
+    },
+    "next.done": {
+      "dtype": "bool"
+    },
+    "language_instruction": {
+      "dtype": "string"
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ]
+    },
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ]
+    },
+    "observation.image_shape": {
+      "dtype": "string"
+    },
+    "observation.image_dtype": {
+      "dtype": "string"
+    },
+    "observation.image_mean": {
+      "dtype": "float32"
+    },
+    "observation.image_std": {
+      "dtype": "float32"
+    }
+  },
+  "num_rows": 250,
+  "num_episodes": 5,
+  "task_description": "Pick up the cube and move it to the target location"
+}

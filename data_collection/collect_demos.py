@@ -8,7 +8,7 @@ import mani_skill.envs
 from sim_env.scripted_baseline import ScriptedPickPlacePolicy
 
 def collect_rebalanced_dataset_with_state(
-    output_h5_path: str = "/content/drive/MyDrive/vla-manipulation/data/pick_cube_demos/trajectory_dataset.h5",
+    output_h5_path: str = "./data/pick_cube_demos/trajectory_dataset.h5",
     main_seeds: list = None,
     rebalance_seeds: list = None
 ):
